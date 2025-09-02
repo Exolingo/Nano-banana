@@ -1,0 +1,5 @@
+{
+  "name": "Banana Canvas",
+  "description": "'Nano Banana' 을 이용한 이미지 생성,편집 도구",
+  "requestFramePermissions": []
+}
