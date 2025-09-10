@@ -1,11 +1,11 @@
 import { GoogleGenAI, Modality, Part } from "@google/genai";
 import { GeneratedPart, ImageData } from '../types';
 
-if (!process.env.API_KEY) {
+if (!process.env.GOOGLE_API_KEY) {
     throw new Error("API_KEY environment variable not set");
 }
 
-const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+const ai = new GoogleGenAI({ apiKey: process.env.GOOGLE_API_KEY });
 
 export const translateToEnglish = async (text: string): Promise<string> => {
     if (!text.trim()) {
